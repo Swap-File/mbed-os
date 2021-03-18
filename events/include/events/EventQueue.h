@@ -157,7 +157,7 @@ public:
      *  one of the call functions. It is not safe to call cancel after an event
      *  has already been dispatched.
      *
-     *  id must be valid i.e. event must have not finished executing.
+     *  id must be valid i.e. event must have not started executing.
      *
      *  The cancel function is IRQ safe.
      *
@@ -177,7 +177,7 @@ public:
      *  Attempts to cancel an UserAllocatedEvent referenced by its address
      *  It is not safe to call cancel after an event has already been dispatched.
      *
-     *  Event must be valid i.e. event must have not finished executing
+     *  Event must be valid i.e. event must have not started executing
      *  and must have been bound to this queue.
      *
      *  The cancel function is IRQ safe.
